@@ -1,0 +1,5 @@
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+*/1 * * * * root /usr/local/bin/php /var/www/html/check.php >> /tmp/cheky_ROOT.log 2>&1
+# */1 * * * * www-data /usr/local/bin/php /var/www/html/check.php >> /tmp/cheky_WWW_DATA.log 2>&1
